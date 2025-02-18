@@ -89,7 +89,7 @@ loginForm.addEventListener("submit",(evt)=>{
     chat.style.display = "flex";
 
     //Conecta cliente no servidor
-    clienteConexao = new WebSocket("ws://localhost:8080")
+    clienteConexao = new WebSocket("wss://chat-backend-7pya.onrender.com")
 
     clienteConexao.onmessage = processarMensagem
 })
